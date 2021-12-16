@@ -1,0 +1,27 @@
+{% extends 'core/base.html'%}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avata.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Jean Franco Llantoy Roca</h2>   
+        <p>Ingeniero Mecatronico, Actualmente trabajando como Backend Developer</p>
+        <p>Me gustaria poder trabajar en proyectos relacionados con ayuda social e intentar
+            disminuir la brecha que nos separa con herramientas como la programacion, inteligencia
+            emocional y oportunidades de trabajo.
+        </p>
+
+    </div>
+</div>
+{% endblock %}
