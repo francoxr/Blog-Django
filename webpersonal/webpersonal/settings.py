@@ -23,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&6d@zcu61)58)z064i-rz=rlcppy3g*9q-kn*)=p8cev(d2pih'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['blogfrancoxr.pythonantwhere.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -77,13 +76,9 @@ WSGI_APPLICATION = 'webpersonal.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "webpersonal_db",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
-        "HOST": "localhost",
-        "PORT": 5432,
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'webpersonal_db',
     }
 }
 
